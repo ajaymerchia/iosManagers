@@ -31,7 +31,7 @@ This is a pod that makes creating programmatic UI easier, and also improves othe
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'iosManagers/Pod/Classes/**/*'
+  s.source_files = 'iosManagers/Classes/**/*'
   
   # s.resource_bundles = {
   #   'iosManagers' => ['iosManagers/Assets/*.png']
