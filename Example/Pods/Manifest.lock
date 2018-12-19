@@ -1,0 +1,16 @@
+PODS:
+  - iosManagers (0.1.0)
+
+DEPENDENCIES:
+  - iosManagers (from `../`)
+
+EXTERNAL SOURCES:
+  iosManagers:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iosManagers: 507bfea9c8da7641e7913278615be861a1858e84
+
+PODFILE CHECKSUM: 5ebefc60c3155808ea4f71cc6abe948847048814
+
+COCOAPODS: 1.5.3
