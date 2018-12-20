@@ -9,19 +9,19 @@ import Foundation
 import UIKit
 import JGProgressHUD
 
-class Utils {
+public class Utils {
     
    // Backend Stuff
-    static func uuid() -> String {
+    public static func uuid() -> String {
         return UUID().uuidString
     }
     
     // URL Stuff
-    static func makeURLSafe(_ url: String) -> String{
+    public static func makeURLSafe(_ url: String) -> String{
         return url.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)!
     }
     
-    static func openURL(_ urlString: String) {
+    public static func openURL(_ urlString: String) {
         if let url = URL(string: urlString) {
             print("Opening URL: \(urlString)")
             if #available(iOS 10, *) {
@@ -32,7 +32,7 @@ class Utils {
         }
     }
     
-    static func getImageFrom(url: String, defaultImg: UIImage, callback: @escaping ((UIImage) -> ())) {
+    public static func getImageFrom(url: String, defaultImg: UIImage, callback: @escaping ((UIImage) -> ())) {
         
         if let imageUrl:URL = URL(string: url) {
             DispatchQueue.global().async {
@@ -52,35 +52,22 @@ class Utils {
         }
     }
     
-    
-    // Loading Stuff
-    
-    
-    
     // Time Management Stuff
-    static func getYYYYMMDDRepr(date: Date) -> String {
+    public static func getYYYYMMDDRepr(date: Date) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.string(from: date)
     }
     
-    static func convertToDate(timestring: String) -> Date? {
+    public static func convertToDate(timestring: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
         dateFormatter.locale = Locale(identifier: "en_US")
         return dateFormatter.date(from: timestring) ?? nil
     }
     
-    // JSON Read Stuff
-    static func cleanJSONRead(_ str: String, other: String) -> String {
-        if str == "" {
-            return other
-        }
-        return str
-    }
-    
-    static func days(s: Double) -> Double {
+    public static func days(s: Double) -> Double {
         return s/(24.0*60*60)
     }
     
@@ -89,25 +76,24 @@ class Utils {
     }
     
     
-    
+    // JSON Read Stuff
+    public static func cleanJSONRead(_ str: String, other: String) -> String {
+        if str == "" {
+            return other
+        }
+        return str
+    }
     
     // UI Stuff
     
-    enum Side {
+    public enum Side {
         case Top
         case Right
         case Bottom
         case Left
     }
     
-    static func getBottomBorder(forView: UIView, thickness: CGFloat, color: UIColor) -> UIView {
-        let ret = UIView(frame: LayoutManager.belowCentered(elementAbove: forView, padding: 0, width: forView.frame.width, height: thickness))
-        
-        ret.backgroundColor = color
-        return ret
-    }
-    
-    static func getBorder(forView: UIView, thickness: CGFloat, color: UIColor, side: Side) -> UIView {
+    public static func getBorder(forView: UIView, thickness: CGFloat, color: UIColor, side: Side) -> UIView {
         
         let ret = UIView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         ret.backgroundColor = color
@@ -134,7 +120,7 @@ class Utils {
     /// Adds the question mark based background image to the given view
     ///
     /// - Parameter given_view: View to which a background image should be added
-    static func addBackgroundImage(givenView: UIView, imgName: String, opacity: CGFloat = 1) {
+    public static func addBackgroundImage(givenView: UIView, imgName: String, opacity: CGFloat = 1) {
         let backgroundImage = UIImageView(frame: CGRect(x: 0, y: 0, width: givenView.frame.width, height: givenView.frame.height))
         backgroundImage.contentMode = .scaleAspectFill
         backgroundImage.clipsToBounds = true
@@ -143,7 +129,7 @@ class Utils {
         givenView.insertSubview(backgroundImage, at: 0)
     }
     
-    static func generateRandomColor() -> UIColor {
+    public static func generateRandomColor() -> UIColor {
         let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
         let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
         let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from black
@@ -151,7 +137,7 @@ class Utils {
         return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
     }
     
-    static func hexToRGB(hex: String) -> [Int] {
+    public static func hexToRGB(hex: String) -> [Int] {
         
         var values = [0,0,0]
         
@@ -167,7 +153,9 @@ class Utils {
         return values
     }
     
-    static func sum(_ arr: [Int]) -> Int {
+    // Math
+    
+    public static func sum(_ arr: [Int]) -> Int {
         var sum = 0
         for item in arr {
             sum += item
@@ -175,7 +163,7 @@ class Utils {
         return sum
     }
     
-    static func pow(b: Int, e: Int) -> Int {
+    public static func pow(b: Int, e: Int) -> Int {
         var ret = 1
         for _ in 1...e {
             ret = ret * b
@@ -186,7 +174,7 @@ class Utils {
     }
     
     /// Prints all Fonts that have been loaded into the application
-    static func printFontFamilies() {
+    public static func printFontFamilies() {
         for family in UIFont.familyNames.sorted() {
             let names = UIFont.fontNames(forFamilyName: family)
             print("Family: \(family) Font names: \(names)")
@@ -196,9 +184,9 @@ class Utils {
 }
 
 
-extension String
+public extension String
 {
-    func toDateTime() -> Date
+    public func toDateTime() -> Date
     {
         //Create Date Formatter
         let dateFormatter = DateFormatter()
@@ -214,8 +202,8 @@ extension String
     }
 }
 
-extension UIButton {
-    func setBackgroundColor(color: UIColor, forState: UIControl.State) {
+public extension UIButton {
+    public func setBackgroundColor(color: UIColor, forState: UIControl.State) {
         UIGraphicsBeginImageContext(CGSize(width: 1, height: 1))
         UIGraphicsGetCurrentContext()!.setFillColor(color.cgColor)
         UIGraphicsGetCurrentContext()!.fill(CGRect(x: 0, y: 0, width: 1, height: 1))

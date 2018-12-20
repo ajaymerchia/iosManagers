@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 import JGProgressHUD
 
-class AlertManager {
+public class AlertManager {
     private var srcView:UIViewController!
     private var callback:(() -> ())?
-    init(view: UIViewController) {
+    public init(view: UIViewController) {
         srcView = view
     }
-    init(view: UIViewController, stateRestoration: @escaping (() -> ()) ) {
+    public init(view: UIViewController, stateRestoration: @escaping (() -> ()) ) {
         srcView = view
         callback = stateRestoration
     }
     
-    func displayAlert(title: String, message: String) {
+    public func displayAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(defaultAction)
@@ -29,7 +29,7 @@ class AlertManager {
     }
     
 
-    func yesOrNo(title: String, message: String, yes: @escaping () -> (), no: @escaping () -> () ) {
+    public func yesOrNo(title: String, message: String, yes: @escaping () -> (), no: @escaping () -> () ) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     
@@ -44,14 +44,14 @@ class AlertManager {
         
     }
     
-    func startProgressHud(withMsg:String) -> JGProgressHUD {
+    public func startProgressHud(withMsg:String) -> JGProgressHUD {
         let hud = JGProgressHUD(style: .light)
         hud.textLabel.text = withMsg
         hud.show(in: self.srcView.view)
         return hud
     }
     
-    func getTextInput(withTitle: String, andPlaceholder: String, placeholderToText: Bool = false,  completion: @escaping (String) -> (), cancellation: @escaping () -> () = {}) {
+    public func getTextInput(withTitle: String, andPlaceholder: String, placeholderToText: Bool = false,  completion: @escaping (String) -> (), cancellation: @escaping () -> () = {}) {
         let alert = UIAlertController(title: withTitle, message: nil, preferredStyle: .alert)
         
         alert.addTextField(configurationHandler: { textField in

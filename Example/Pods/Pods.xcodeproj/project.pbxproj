@@ -10,10 +10,8 @@
 		3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */; };
 		9CD0FA88B4F47A7BED6A971FD0C50C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
 		B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A321CB307600C1DEB7 /* AlertManager.swift */; };
-		B7EB12AA21CB307600C1DEB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A421CB307600C1DEB7 /* Constants.swift */; };
 		B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A521CB307600C1DEB7 /* ColorManager.swift */; };
 		B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */; };
-		B7EB12AD21CB307600C1DEB7 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A721CB307600C1DEB7 /* Notifications.swift */; };
 		B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A821CB307600C1DEB7 /* Utils.swift */; };
 		B7EB12AF21CB307900C1DEB7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */; };
 		BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C02EFC635C48457BD0B5F8582F7E6A /* iosManagers-dummy.m */; };
@@ -53,10 +51,8 @@
 		A38BA658ADAED54D4F92F1F1995F47F1 /* iosManagers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosManagers-umbrella.h"; sourceTree = "<group>"; };
 		A6F9D6A72B9B457776048D7DDEB6620A /* Pods-iosManagers_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosManagers_Tests-dummy.m"; sourceTree = "<group>"; };
 		B7EB12A321CB307600C1DEB7 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
-		B7EB12A421CB307600C1DEB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B7EB12A521CB307600C1DEB7 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
-		B7EB12A721CB307600C1DEB7 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 		B7EB12A821CB307600C1DEB7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BD644C0C5D80ED9BD16BCBF9A01717A9 /* Pods-iosManagers_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosManagers_Tests.modulemap"; sourceTree = "<group>"; };
 		BE315D4CE428B334B6943D14E69C6FA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -144,9 +140,7 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				B7EB12A321CB307600C1DEB7 /* AlertManager.swift */,
 				B7EB12A521CB307600C1DEB7 /* ColorManager.swift */,
-				B7EB12A421CB307600C1DEB7 /* Constants.swift */,
 				B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */,
-				B7EB12A721CB307600C1DEB7 /* Notifications.swift */,
 				B7EB12A821CB307600C1DEB7 /* Utils.swift */,
 				A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */,
 			);
@@ -315,11 +309,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */,
-				B7EB12AD21CB307600C1DEB7 /* Notifications.swift in Sources */,
 				B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */,
 				3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */,
 				B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */,
-				B7EB12AA21CB307600C1DEB7 /* Constants.swift in Sources */,
 				B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */,
 				B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */,
 			);

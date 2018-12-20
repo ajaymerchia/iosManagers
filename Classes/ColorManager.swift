@@ -8,9 +8,7 @@
 import UIKit
 
 
-extension UIColor {
-    // ADD APPLICATION COLORS HERE
-    static let SampleColor = rgb(100,100,100)
+public extension UIColor {
     
     /**
      Construct a UIColor using an HTML/CSS RGB formatted value and an alpha value
@@ -20,7 +18,7 @@ extension UIColor {
      
      :returns: an UIColor instance that represent the required color
      */
-    class func colorWithRGB(rgbValue : UInt, alpha : CGFloat = 1.0) -> UIColor {
+    public class func colorWithRGB(rgbValue : UInt, alpha : CGFloat = 1.0) -> UIColor {
         let red = CGFloat((rgbValue & 0xFF0000) >> 16) / 255
         let green = CGFloat((rgbValue & 0xFF00) >> 8) / 255
         let blue = CGFloat(rgbValue & 0xFF) / 255
@@ -34,7 +32,7 @@ extension UIColor {
      :param: lighting percent percentage
      :returns: lighter UIColor
      */
-    func lighterColor(percent : Double) -> UIColor {
+    public func lighterColor(percent : Double) -> UIColor {
         return colorWithBrightnessFactor(factor: CGFloat(1 + percent));
     }
     
@@ -44,11 +42,11 @@ extension UIColor {
      :param: darking percent percentage
      :returns: darker UIColor
      */
-    func darkerColor(percent : Double) -> UIColor {
+    public func darkerColor(percent : Double) -> UIColor {
         return colorWithBrightnessFactor(factor: CGFloat(1 - percent));
     }
     
-    func darkMode() -> UIColor {
+    public func darkMode() -> UIColor {
         return self.colorWithBrightnessFactor(factor: 0.3)
     }
     
@@ -58,7 +56,7 @@ extension UIColor {
      :param: factor brightness factor
      :returns: modified color
      */
-    func colorWithBrightnessFactor(factor: CGFloat) -> UIColor {
+    public func colorWithBrightnessFactor(factor: CGFloat) -> UIColor {
         var hue : CGFloat = 0
         var saturation : CGFloat = 0
         var brightness : CGFloat = 0
@@ -73,7 +71,7 @@ extension UIColor {
 }
 
 /// A Simple class to assist with UI Color theme
-class rgba: UIColor {
+public class rgba: UIColor {
     
     /// Easy UI Color creation method
     ///
@@ -83,12 +81,12 @@ class rgba: UIColor {
     ///   - b: blue on a scale from 0 to 255
     ///   - a: alpha coeffiecient from 0 to 1
     /// - Returns: UIColor with the given rgba attributes
-    convenience init(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) {
+    public convenience init(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) {
         self.init(red: r/255.00, green: g/255.00, blue: b/255.00, alpha: a)
     }
 }
-class rgb: UIColor {
-    convenience init(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat) {
+public class rgb: UIColor {
+    public convenience init(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat) {
         self.init(red: r/255.00, green: g/255.00, blue: b/255.00, alpha: 1)
     }
 }
