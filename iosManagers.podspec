@@ -33,6 +33,8 @@ This is a pod that makes creating programmatic UI easier, and also improves othe
 
   s.source_files = 'Classes/*.swift'
   
+  s.dependency = 'JGProgressHud'
+  
   # s.resource_bundles = {
   #   'iosManagers' => ['iosManagers/Assets/*.png']
   # }
