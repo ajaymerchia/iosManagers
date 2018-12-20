@@ -2,5 +2,6 @@ use_frameworks!
 target 'iosManagers_Tests' do
   pod 'iosManagers', :path => '../'
   
+  pod 'JGProgressHUD', :inhibit_warnings => true
   
 end

@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */; };
 		9CD0FA88B4F47A7BED6A971FD0C50C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A321CB307600C1DEB7 /* AlertManager.swift */; };
+		B7EB12AA21CB307600C1DEB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A421CB307600C1DEB7 /* Constants.swift */; };
+		B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A521CB307600C1DEB7 /* ColorManager.swift */; };
+		B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */; };
+		B7EB12AD21CB307600C1DEB7 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A721CB307600C1DEB7 /* Notifications.swift */; };
+		B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A821CB307600C1DEB7 /* Utils.swift */; };
+		B7EB12AF21CB307900C1DEB7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */; };
 		BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C02EFC635C48457BD0B5F8582F7E6A /* iosManagers-dummy.m */; };
 		D0902760274DC0707A77438EF5CAE4A6 /* iosManagers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A38BA658ADAED54D4F92F1F1995F47F1 /* iosManagers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F17AA9C33E0DE37D374472B7114457CA /* Pods-iosManagers_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F9D6A72B9B457776048D7DDEB6620A /* Pods-iosManagers_Tests-dummy.m */; };
@@ -41,10 +48,16 @@
 		75C02EFC635C48457BD0B5F8582F7E6A /* iosManagers-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "iosManagers-dummy.m"; sourceTree = "<group>"; };
 		8292526F4CFA508C23078F34280D0070 /* Pods_iosManagers_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosManagers_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A9CB23ED30297E6E661C9296913CBDE /* iosManagers-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosManagers-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../../Classes/Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
 		A38BA658ADAED54D4F92F1F1995F47F1 /* iosManagers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosManagers-umbrella.h"; sourceTree = "<group>"; };
 		A6F9D6A72B9B457776048D7DDEB6620A /* Pods-iosManagers_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosManagers_Tests-dummy.m"; sourceTree = "<group>"; };
+		B7EB12A321CB307600C1DEB7 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		B7EB12A421CB307600C1DEB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B7EB12A521CB307600C1DEB7 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
+		B7EB12A721CB307600C1DEB7 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		B7EB12A821CB307600C1DEB7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BD644C0C5D80ED9BD16BCBF9A01717A9 /* Pods-iosManagers_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosManagers_Tests.modulemap"; sourceTree = "<group>"; };
 		BE315D4CE428B334B6943D14E69C6FA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D658B19F5621800BE7EA10EECFD075C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,7 +120,6 @@
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				F1DCC17B6D91A24C1CDD0D36626E5390 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				2B74044C72674C803F1A50105F773700 /* Products */,
@@ -129,6 +141,13 @@
 		B7EB12A221CB086400C1DEB7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				B7EB12A321CB307600C1DEB7 /* AlertManager.swift */,
+				B7EB12A521CB307600C1DEB7 /* ColorManager.swift */,
+				B7EB12A421CB307600C1DEB7 /* Constants.swift */,
+				B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */,
+				B7EB12A721CB307600C1DEB7 /* Notifications.swift */,
+				B7EB12A821CB307600C1DEB7 /* Utils.swift */,
 				A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */,
 			);
 			path = Classes;
@@ -284,6 +303,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7EB12AF21CB307900C1DEB7 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +315,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */,
+				B7EB12AD21CB307600C1DEB7 /* Notifications.swift in Sources */,
+				B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */,
 				3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */,
+				B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */,
+				B7EB12AA21CB307600C1DEB7 /* Constants.swift in Sources */,
+				B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */,
+				B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
