@@ -29,9 +29,9 @@ This is a pod that makes creating programmatic UI easier, and also improves othe
   s.source           = { :git => 'https://github.com/ajaymerchia/iosManagers.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.1'
 
-  s.source_files = 'iosManagers/Classes/**/*'
+  s.source_files = 'Classes/*.swift'
   
   # s.resource_bundles = {
   #   'iosManagers' => ['iosManagers/Assets/*.png']
