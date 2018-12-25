@@ -52,7 +52,7 @@ public class AlertManager {
     }
     
     public func triggerCallback() {
-        self.callback()
+        self.callback?()
     }
     
     public func getTextInput(withTitle: String, andPlaceholder: String, placeholderToText: Bool = false,  completion: @escaping (String) -> (), cancellation: @escaping () -> () = {}) {

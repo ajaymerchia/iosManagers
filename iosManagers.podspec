@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iosManagers'
-  s.version          = '1.0.9'
+  s.version          = '1.0.10'
   s.summary          = 'This is a pod that makes creating programmatic UI easier, and also improves other typical programming tasks in.'
   s.swift_version    = '3.2'
 
