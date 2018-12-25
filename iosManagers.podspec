@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'iosManagers'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'This is a pod that makes creating programmatic UI easier, and also improves other typical programming tasks in.'
   s.swift_version    = '3.2'
 
@@ -34,10 +34,16 @@ This is a pod that makes creating programmatic UI easier, and also improves othe
   s.source_files = 'Classes/*.swift'
   
   s.dependency 'JGProgressHUD'
+#  s.dependency 'ChameleonFramework/Swift'
+
+  s.resources = 'Assets/*.*'
+   s.resource_bundles = {
+     'Resources' => ['*.png','**/*.png','**/**/*.png']
+   }
+   
+   
+
   
-  # s.resource_bundles = {
-  #   'iosManagers' => ['iosManagers/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

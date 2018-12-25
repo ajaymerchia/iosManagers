@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:../Assets"
+      name = "Assets">
+      <FileRef
+         location = "group:avatar-black.png">
+      </FileRef>
+      <Group
+         location = "group:Assets.xcassets"
+         name = "Assets.xcassets">
+         <Group
+            location = "group:avatar-black.imageset"
+            name = "avatar-black.imageset">
+            <FileRef
+               location = "group:avatar-black.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:avatar.imageset"
+            name = "avatar.imageset">
+            <FileRef
+               location = "group:avatar.png">
+            </FileRef>
+            <FileRef
+               location = "group:Contents.json">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Contents.json">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:avatar.png">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:iosManagers.xcodeproj">
    </FileRef>

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */; };
 		9CD0FA88B4F47A7BED6A971FD0C50C7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		B7DE62A721CC33E800AC0113 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7DE62A621CC33E800AC0113 /* PhotoManager.swift */; };
+		B7DE62AF21CC3EBA00AC0113 /* avatar-black.png in Resources */ = {isa = PBXBuildFile; fileRef = B7DE62AB21CC3EBA00AC0113 /* avatar-black.png */; };
+		B7DE62B121CC3EBA00AC0113 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7DE62AD21CC3EBA00AC0113 /* Assets.xcassets */; };
+		B7DE62B221CC3EBA00AC0113 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B7DE62AE21CC3EBA00AC0113 /* avatar.png */; };
 		B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A321CB307600C1DEB7 /* AlertManager.swift */; };
 		B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A521CB307600C1DEB7 /* ColorManager.swift */; };
 		B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */; };
@@ -50,6 +54,10 @@
 		A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LayoutManager.swift; sourceTree = "<group>"; };
 		A38BA658ADAED54D4F92F1F1995F47F1 /* iosManagers-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "iosManagers-umbrella.h"; sourceTree = "<group>"; };
 		A6F9D6A72B9B457776048D7DDEB6620A /* Pods-iosManagers_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iosManagers_Tests-dummy.m"; sourceTree = "<group>"; };
+		B7DE62A621CC33E800AC0113 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		B7DE62AB21CC3EBA00AC0113 /* avatar-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "avatar-black.png"; sourceTree = "<group>"; };
+		B7DE62AD21CC3EBA00AC0113 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7DE62AE21CC3EBA00AC0113 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		B7EB12A321CB307600C1DEB7 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		B7EB12A521CB307600C1DEB7 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
@@ -126,12 +134,23 @@
 		A0710A74AEE0F0C8775173C2F0563DE5 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
+				B7DE62AA21CC3EBA00AC0113 /* Assets */,
 				B7EB12A221CB086400C1DEB7 /* Classes */,
 				E2923A5C7BFAA52CC01C4D766967DA4A /* iosManagers.podspec */,
 				66BA2EEF39C87E6045086E4AFE8D3DEE /* LICENSE */,
 				260AD3D3A8BA0C477D3B585B7B711210 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		B7DE62AA21CC3EBA00AC0113 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B7DE62AB21CC3EBA00AC0113 /* avatar-black.png */,
+				B7DE62AE21CC3EBA00AC0113 /* avatar.png */,
+				B7DE62AD21CC3EBA00AC0113 /* Assets.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		B7EB12A221CB086400C1DEB7 /* Classes */ = {
@@ -141,6 +160,7 @@
 				B7EB12A321CB307600C1DEB7 /* AlertManager.swift */,
 				B7EB12A521CB307600C1DEB7 /* ColorManager.swift */,
 				B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */,
+				B7DE62A621CC33E800AC0113 /* PhotoManager.swift */,
 				B7EB12A821CB307600C1DEB7 /* Utils.swift */,
 				A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */,
 			);
@@ -297,6 +317,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7DE62B221CC3EBA00AC0113 /* avatar.png in Resources */,
+				B7DE62AF21CC3EBA00AC0113 /* avatar-black.png in Resources */,
+				B7DE62B121CC3EBA00AC0113 /* Assets.xcassets in Resources */,
 				B7EB12AF21CB307900C1DEB7 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -310,6 +333,7 @@
 			files = (
 				BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */,
 				B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */,
+				B7DE62A721CC33E800AC0113 /* PhotoManager.swift in Sources */,
 				3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */,
 				B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */,
 				B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */,
