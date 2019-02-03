@@ -1,5 +1,5 @@
 //
-//  Utils.swift
+//  assortedHelpers.swift
 //
 //  Created by Ajay Raj Merchia on 10/10/18.
 //  Copyright © 2018 Ajay Raj Merchia. All rights reserved.
@@ -9,12 +9,33 @@ import Foundation
 import UIKit
 import JGProgressHUD
 
-public class Utils {
+public class assortedHelpers {
     
-   // Backend Stuff
+   // Logic & Datastructures
     public static func uuid() -> String {
         return UUID().uuidString
     }
+    
+    public static func randomNum(from: Int = 0, upTo: Int, _ inclusive: Bool = false) -> Int {
+        if !inclusive {
+            return Int.random(in: from..<upTo)
+        } else {
+            return Int.random(in: from...upTo)
+        }
+    }
+    
+    public static func mergeDictionaries(d1: [String: String]?, d2: [String: String]?) -> [String: String] {
+        let d1Unwrap: [String: String]! = d1 ?? [:]
+        let d2Unwrap: [String: String]! = d2 ?? [:]
+        let result: [String: String]! = d1Unwrap.merging(d2Unwrap) { (str1, str2) -> String in
+            return str1
+        }
+        
+        return result
+    }
+    
+    
+    
     
     // URL Stuff
     public static func makeURLSafe(_ url: String) -> String{
@@ -60,6 +81,31 @@ public class Utils {
         return dateFormatter.string(from: date)
     }
     
+    public static func getMDDYYRepr(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "M/dd/yy"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.string(from: date)
+    }
+    
+    public static func getURLSafeDateFormat(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "M-dd-yy"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.string(from: date)
+    }
+    
+    public static func getTimeWithAMPM(date: Date) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "h:mm a"
+        dateFormatter.locale = Locale(identifier: "en_US")
+        return dateFormatter.string(from: date)
+    }
+    
+    public static func getFormattedDateAndTime(date: Date) -> String {
+        return getMDDYYRepr(date: date) + ", " + getTimeWithAMPM(date: date)
+    }
+    
     public static func convertToDate(timestring: String) -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm"
@@ -71,8 +117,16 @@ public class Utils {
         return s/(24.0*60*60)
     }
     
-    static func secs(d: Double) -> Double {
+    public static func seconds(d: Double) -> Double {
         return d * 24.0 * 60 * 60
+    }
+    
+    public static func seconds(hr: Double) -> Double {
+        return hr * seconds(min: 60)
+    }
+    
+    public static func seconds(min: Double) -> Double {
+        return min * 60
     }
     
     
@@ -85,7 +139,6 @@ public class Utils {
     }
     
     // UI Stuff
-    
     public enum Side {
         case Top
         case Right
@@ -181,6 +234,20 @@ public class Utils {
         }
     }
     
+}
+
+public extension UIImage {
+    func resizeTo(_ sizeChange:CGSize) -> UIImage {
+        
+        let hasAlpha = true
+        let scale: CGFloat = 0.0 // Use scale factor of main screen
+        
+        UIGraphicsBeginImageContextWithOptions(sizeChange, !hasAlpha, scale)
+        self.draw(in: CGRect(origin: .zero, size: sizeChange))
+        
+        let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
+        return scaledImage!
+    }
 }
 
 

@@ -16,7 +16,7 @@
 		B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A321CB307600C1DEB7 /* AlertManager.swift */; };
 		B7EB12AB21CB307600C1DEB7 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A521CB307600C1DEB7 /* ColorManager.swift */; };
 		B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */; };
-		B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A821CB307600C1DEB7 /* Utils.swift */; };
+		B7EB12AE21CB307600C1DEB7 /* assortedHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EB12A821CB307600C1DEB7 /* assortedHelpers.swift */; };
 		B7EB12AF21CB307900C1DEB7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */; };
 		BA65327D0C7414E4B1F2036020675AEE /* iosManagers-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C02EFC635C48457BD0B5F8582F7E6A /* iosManagers-dummy.m */; };
 		D0902760274DC0707A77438EF5CAE4A6 /* iosManagers-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A38BA658ADAED54D4F92F1F1995F47F1 /* iosManagers-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,7 +61,7 @@
 		B7EB12A321CB307600C1DEB7 /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		B7EB12A521CB307600C1DEB7 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
 		B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataManager.swift; sourceTree = "<group>"; };
-		B7EB12A821CB307600C1DEB7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		B7EB12A821CB307600C1DEB7 /* assortedHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = assortedHelpers.swift; sourceTree = "<group>"; };
 		BD644C0C5D80ED9BD16BCBF9A01717A9 /* Pods-iosManagers_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-iosManagers_Tests.modulemap"; sourceTree = "<group>"; };
 		BE315D4CE428B334B6943D14E69C6FA1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D658B19F5621800BE7EA10EECFD075C9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				B7EB12A521CB307600C1DEB7 /* ColorManager.swift */,
 				B7EB12A621CB307600C1DEB7 /* LocalDataManager.swift */,
 				B7DE62A621CC33E800AC0113 /* PhotoManager.txt */,
-				B7EB12A821CB307600C1DEB7 /* Utils.swift */,
+				B7EB12A821CB307600C1DEB7 /* assortedHelpers.swift */,
 				A010FD1D19C807D3276FAC2EC995FF0B /* LayoutManager.swift */,
 			);
 			path = Classes;
@@ -337,7 +337,7 @@
 				3F085BB3266C3E457679C7620A5B8ECD /* LayoutManager.swift in Sources */,
 				B7EB12A921CB307600C1DEB7 /* AlertManager.swift in Sources */,
 				B7EB12AC21CB307600C1DEB7 /* LocalDataManager.swift in Sources */,
-				B7EB12AE21CB307600C1DEB7 /* Utils.swift in Sources */,
+				B7EB12AE21CB307600C1DEB7 /* assortedHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
